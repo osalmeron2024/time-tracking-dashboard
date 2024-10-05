@@ -979,28 +979,28 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/images\/icon-exercise\.svg\'\)\] {
-  background-image: url('/assets/images/icon-exercise.svg');
+.bg-\[url\(\'\.\.\/assets\/images\/icon-exercise\.svg\'\)\] {
+  background-image: url('../assets/images/icon-exercise.svg');
 }
 
-.bg-\[url\(\'\/assets\/images\/icon-play\.svg\'\)\] {
-  background-image: url('/assets/images/icon-play.svg');
+.bg-\[url\(\'\.\.\/assets\/images\/icon-play\.svg\'\)\] {
+  background-image: url('../assets/images/icon-play.svg');
 }
 
-.bg-\[url\(\'\/assets\/images\/icon-self-care\.svg\'\)\] {
-  background-image: url('/assets/images/icon-self-care.svg');
+.bg-\[url\(\'\.\.\/assets\/images\/icon-self-care\.svg\'\)\] {
+  background-image: url('../assets/images/icon-self-care.svg');
 }
 
-.bg-\[url\(\'\/assets\/images\/icon-social\.svg\'\)\] {
-  background-image: url('/assets/images/icon-social.svg');
+.bg-\[url\(\'\.\.\/assets\/images\/icon-social\.svg\'\)\] {
+  background-image: url('../assets/images/icon-social.svg');
 }
 
-.bg-\[url\(\'\/assets\/images\/icon-study\.svg\'\)\] {
-  background-image: url('/assets/images/icon-study.svg');
+.bg-\[url\(\'\.\.\/assets\/images\/icon-study\.svg\'\)\] {
+  background-image: url('../assets/images/icon-study.svg');
 }
 
-.bg-\[url\(\'\/assets\/images\/icon-work\.svg\'\)\] {
-  background-image: url('/assets/images/icon-work.svg');
+.bg-\[url\(\'\.\.\/assets\/images\/icon-work\.svg\'\)\] {
+  background-image: url('../assets/images/icon-work.svg');
 }
 
 .bg-gradient-to-r {
@@ -1130,37 +1130,17 @@ video {
   color: hsl(var(--footer-n2));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .text-text-paragraph-Primary {
   color: hsl(var(--text-paragraph-Primary));
 }
 
 .text-title-text {
   color: hsl(var(--title-text));
-}
-
-.text-lime-400 {
-  --tw-text-opacity: 1;
-  color: rgb(163 230 53 / var(--tw-text-opacity));
-}
-
-.text-lime-500 {
-  --tw-text-opacity: 1;
-  color: rgb(132 204 22 / var(--tw-text-opacity));
-}
-
-.text-lime-600 {
-  --tw-text-opacity: 1;
-  color: rgb(101 163 13 / var(--tw-text-opacity));
-}
-
-.text-gray-950 {
-  --tw-text-opacity: 1;
-  color: rgb(3 7 18 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .metallicChic {
