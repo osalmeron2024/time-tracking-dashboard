@@ -149,7 +149,7 @@ const showCardColorScheme = (e) => {
     btnDownArrow.classList.remove("downArrow");
     btnDownArrow.classList.add("upArrow");
     // btnDownArrow.setAttribute("src","/assets/images/up-arrow.svg");
-    setTimeout(()=>{btnDownArrow.setAttribute("src","/assets/images/up-arrow.svg")},600);
+    setTimeout(()=>{btnDownArrow.setAttribute("src","../assets/images/up-arrow.svg")},600);
 
   }else if(e.target.matches(".upArrow")){
     rbCardSchemeColor.classList.remove("cardColorSchemeShow");
@@ -178,7 +178,7 @@ const showCardColorScheme = (e) => {
     btnDownArrow.classList.remove("upArrow");
     btnDownArrow.classList.add("downArrow");
     
-    setTimeout(()=>{btnDownArrow.setAttribute("src","/assets/images/down-arrow.svg")},600);
+    setTimeout(()=>{btnDownArrow.setAttribute("src","../assets/images/down-arrow.svg")},600);
   }
 };
 
