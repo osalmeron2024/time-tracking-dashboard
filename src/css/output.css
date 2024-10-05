@@ -853,6 +853,46 @@ video {
   margin-top: 1.75rem;
 }
 
+.ml-36 {
+  margin-left: 9rem;
+}
+
+.mr-36 {
+  margin-right: 9rem;
+}
+
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.ml-44 {
+  margin-left: 11rem;
+}
+
+.ml-48 {
+  margin-left: 12rem;
+}
+
+.ml-64 {
+  margin-left: 16rem;
+}
+
+.ml-\[15rem\] {
+  margin-left: 15rem;
+}
+
+.ml-\[14rem\] {
+  margin-left: 14rem;
+}
+
+.-mt-0 {
+  margin-top: -0px;
+}
+
+.ml-\[14\.5rem\] {
+  margin-left: 14.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1457,6 +1497,38 @@ video {
 
   .md\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .md\:ml-32 {
+    margin-left: 8rem;
+  }
+
+  .md\:ml-\[8\.5\] {
+    margin-left: 8.5;
+  }
+
+  .md\:ml-\[8\.5rem\] {
+    margin-left: 8.5rem;
+  }
+
+  .md\:ml-\[8\.3rem\] {
+    margin-left: 8.3rem;
+  }
+
+  .md\:ml-\[7\.6rem\] {
+    margin-left: 7.6rem;
+  }
+
+  .md\:ml-\[8\.6\] {
+    margin-left: 8.6;
+  }
+
+  .md\:ml-\[8\.6rem\] {
+    margin-left: 8.6rem;
+  }
+
+  .md\:ml-\[7\.8rem\] {
+    margin-left: 7.8rem;
   }
 
   .md\:grid {
