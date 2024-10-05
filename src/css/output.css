@@ -999,12 +999,40 @@ video {
   background-image: url('../assets/images/icon-study.svg');
 }
 
-.bg-\[url\(\'\.\.\/assets\/images\/icon-work\.svg\'\)\] {
-  background-image: url('../assets/images/icon-work.svg');
+.bg-\[url\(\'\/assets\/images\/icon-work\.svg\'\)\] {
+  background-image: url('/assets/images/icon-work.svg');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/icon-work\.svg\'\)\] {
+  background-image: url('../assets/images/icon-work.svg');
+}
+
+.bg-\[url\(\'\/\.\.\/assets\/images\/icon-work\.svg\'\)\] {
+  background-image: url('/../assets/images/icon-work.svg');
+}
+
+.bg-\[url\(\'\/\.\.\/assets\/images\/icon-exercise\.svg\'\)\] {
+  background-image: url('/../assets/images/icon-exercise.svg');
+}
+
+.bg-\[url\(\'\/\.\.\/assets\/images\/icon-play\.svg\'\)\] {
+  background-image: url('/../assets/images/icon-play.svg');
+}
+
+.bg-\[url\(\'\/\.\.\/assets\/images\/icon-self-care\.svg\'\)\] {
+  background-image: url('/../assets/images/icon-self-care.svg');
+}
+
+.bg-\[url\(\'\/\.\.\/assets\/images\/icon-social\.svg\'\)\] {
+  background-image: url('/../assets/images/icon-social.svg');
+}
+
+.bg-\[url\(\'\/\.\.\/assets\/images\/icon-study\.svg\'\)\] {
+  background-image: url('/../assets/images/icon-study.svg');
 }
 
 .from-grad-Color-Secondary {
