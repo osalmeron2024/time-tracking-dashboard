@@ -1,0 +1,327 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @font-face {
+    font-family: "Rubik-Light";
+    src: url(../../assets/fonts/Rubik-Light.ttf);
+  }
+
+  @font-face {
+    font-family: "Rubik-LightItalic";
+    src: url(../../assets/fonts/Rubik-LightItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Rubik-Medium";
+    src: url(../../assets/fonts/Rubik-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: "Rubik-MediumItalic";
+    src: url(../../assets/fonts/Rubik-MediumItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Rubik-Regular";
+    src: url(../../assets/fonts/Rubik-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "Rubik-SemiBold";
+    src: url(../../assets/fonts/Rubik-SemiBold.ttf);
+  }
+
+  .flexGridMain {
+    @apply flex flex-col-reverse flex-wrap gap-4 mx-auto mt-16 w-[300px] overflow-hidden;
+  }
+
+  .cellSection {
+    @apply rounded-xl;
+  }
+
+  .cellSectionContent {
+    @apply flex flex-col flex-wrap gap-4;
+  }
+
+  .cellArticle {
+    @apply bg-card-Secondary rounded-xl;
+  }
+
+  .cellColorScheme {
+    @apply text-text-paragraph-Primary;
+  }
+
+  .activeStatsCard {
+    @apply transition delay-150 ease-in hover:bg-active-states duration-300;
+  }
+
+  .activeStatesBtn {
+    @apply cursor-pointer transition delay-150 ease-out duration-300  hover:text-title-text hover:bg-active-states hover:font-bold hover:px-1 hover:rounded-md;
+  }
+
+  .toggleTextColor {
+    @apply text-title-text;
+  }
+
+  .cardColorSchemeHide {
+    @apply -translate-y-32;
+  }
+
+  .cardColorSchemeShow {
+    @apply animate-slide-Up-To-Down;
+  }
+
+  .cardHide {
+    @apply animate-slide-Down-To-Up;
+  }
+
+  .cardDashboardTranslateY {
+    @apply -translate-y-14;
+  }
+
+  .cardDashboardMobileTranslateY {
+    @apply -translate-y-20;
+  }
+
+  .cardDashBoardMobile {
+    @apply animate-slide-UpToDown-DashBoardMobile;
+  }
+
+  .cardDashBoardMobile2 {
+    @apply animate-slide-DownToUp-DashBoardMobile;
+  }
+
+  .moveCardDesktopDashBoard {
+    @apply animate-slide-UpToDown-SectionDashboard;
+  }
+
+  .moveCardDesktopDashBoard2 {
+    @apply animate-slide-DownToUp-SectionDashboard;
+  }
+
+  .cardPositionFinal {
+    @apply translate-y-0;
+  }
+
+  /* Card Copy Right */
+  .cardCopyRightPositionFinal {
+    @apply translate-y-0;
+  }
+
+  .cardCopyRight {
+    @apply -translate-y-14;
+  }
+
+  .UpToDownCopyRight {
+    @apply animate-slide-UpToDown-CopyRight;
+  }
+
+  .DownToUpCopyRight {
+    @apply animate-slide-DownToUp-CopyRight;
+  }
+
+  .cardCopyRightMobile {
+    @apply -translate-y-20;
+  }
+
+  .cardCopyRightPositionFinalMobile {
+    @apply translate-y-0;
+  }
+
+  .slideUpToDownCopyRightMobile {
+    @apply animate-slide-UpToDown-CopyRightMobile;
+  }
+
+  .slideDownToUpCopyRightMobile {
+    @apply animate-slide-DownToUp-CopyRightMobile;
+  }
+
+  .grad-Card-Color-Scheme {
+    @apply bg-gradient-to-r from-grad-Color-Primary via-grad-Color-Secondary;
+  }
+}
+
+@layer utilities {
+  .metallicChic {
+    --background: 221, 38%, 77%; /* hsl(221, 38%, 77%) */
+
+    --color-Border: 212, 212, 212; /* rgba(212, 212, 212); */
+    --card-Primary: 227, 45%, 43%; /* hsl(227, 45%, 43%) */
+    --card-Secondary: 223, 70%, 67%; /* hsl(223, 70%, 67%) */
+
+    --card-level1: 214, 97%, 27%; /* hsl(214, 97%, 27%) (work) */
+    --card-level2: 201, 100%, 36%; /* hsl(201, 100%, 36%) (play) */
+    --card-level3: 195, 100%, 39%; /* hsl(195, 100%, 39%) (study) */
+    --card-level4: 190, 100%, 42%; /* hsl(190, 100%, 42%) (exercise) */
+    --card-level5: 190, 74%, 59%; /* hsl(190, 74%, 59%) (social) */
+    --card-level6: 189, 75%, 75%; /* hsl(189, 75%, 75%) (self care) */
+
+    --text-paragraph-Primary: 111, 7%, 20%; /* hsl(111, 7%, 20%) */
+    --title-text: 76, 100%, 95%; /* hsl(76, 100%, 95%) */
+
+    --active-states: 224, 34%, 65%; /* hsl(224, 34%, 65%) */
+
+    --footer-n1: 215, 60%, 11%; /* hsl(215, 60%, 11%) */
+    --footer-n2: 111, 7%, 20%; /* hsl(111, 7%, 20%) */
+
+    --grad-Color-Primary: 263, 39%, 94%, 1; /* hsla(263, 39%, 94%,1) */
+    --grad-Color-Secondary: 221, 38%, 77%, 1; /* hsla(221, 38%, 77%,1) */
+
+    background: hsl(var(--background));
+    background: linear-gradient(
+      180deg,
+      hsl(263, 39%, 94%) -30%,
+      hsl(221, 38%, 77%) 5%,
+      hsl(263, 39%, 94%) 80%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      hsl(263, 39%, 94%) -30%,
+      hsl(221, 38%, 77%) 5%,
+      hsl(263, 39%, 94%) 80%
+    );
+    background: -moz-linear-gradient(
+      180deg,
+      hsl(263, 39%, 94%) -30%,
+      hsl(221, 38%, 77%) 5%,
+      hsl(263, 39%, 94%) 80%
+    );
+  }
+
+  .darkMode {
+    --background: 226, 43%, 10%; /* hsl(226, 43%, 10%); */
+
+    --color-Border: 236, 100%, 87%; /* hsl(236, 100%, 87%); */
+    --card-Primary: 246, 80%, 60%; /* hsl(246, 80%, 60%); */
+    --card-Secondary: 235, 46%, 20%; /* hsl(235, 46%, 20%) */
+
+    --card-level1: 15, 100%, 70%; /* hsl(15, 100%, 70%) (work) */
+    --card-level2: 195, 74%, 62%; /* hsl(195, 74%, 62%) (play) */
+    --card-level3: 348, 100%, 68%; /* hsl(348, 100%, 68%) (study) */
+    --card-level4: 145, 58%, 55%; /* hsl(145, 58%, 55%) (exercise) */
+    --card-level5: 264, 64%, 52%; /* hsl(264, 64%, 52%) (social) */
+    --card-level6: 43, 84%, 65%; /* hsl(43, 84%, 65%) (self care) */
+
+    --text-paragraph-Primary: 236, 100%, 87%; /* hsl(236, 100%, 87%) */
+    --title-text: 255, 255%, 255%; /* hsl(255, 255%, 255%) */
+
+    --active-states: 235, 45%, 61%; /* hsl(235, 45%, 61%)*/
+
+    --footer-n1: 348, 100%, 68%; /* hsl(348, 100%, 68%) */
+    --footer-n2: 43, 84%, 65%; /* hsl(43, 84%, 65%) */
+
+    --grad-Color-Primary: 226, 43%, 10%, 1; /* hsla(226, 43%, 10%,1) */
+    --grad-Color-Secondary: 235, 46%, 20%, 1; /* hsla(235, 46%, 20%,1) */
+
+    background: hsl(var(--background));
+  }
+
+  .earthySerene {
+    --background: 29, 43%, 37%; /* hsl(29, 43%, 37%) */
+
+    --color-Border: 30, 15%, 21%; /* hsl(30, 15%, 21%) */
+    --card-Primary: 29, 29%, 54%; /* hsl(29, 29%, 54%) */
+    --card-Secondary: 31, 24%, 47%; /* hsl(31, 24%, 47%) */
+
+    --card-level1: 210, 11%, 15%; /* hsl(210, 11%, 15%) (work) */
+    --card-level2: 210, 10%, 23%; /* hsl(210, 10%, 23%) (play) */
+    --card-level3: 210, 9%, 31%; /* hsl(210, 9%, 31%) (study) */
+    --card-level4: 208, 7%, 46%; /* hsl(208, 7%, 46%) 210, 9%, 31% (exercise) */
+    --card-level5: 210, 11%, 71%; /* hsl(210, 11%, 71%) 210, 10%, 23% (social) */
+    --card-level6: 210, 14%, 83%; /* hsl(210, 14%, 83%) 210, 11%, 15%(self care) */
+
+    --text-paragraph-Primary: 30, 15%, 21%; /* hsl(30, 15%, 21%) */
+    --title-text: 0, 0%, 100%; /* hsl(0, 0%, 100%) */
+
+    --active-states: 25, 18%, 58%; /* hsl(25, 18%, 58%) */
+
+    --footer-n1: 0, 0%, 0%; /* hsl(0, 0%, 0%) */
+    --footer-n2: 273, 100%, 22%; /* hsl(273, 100%, 22%) */
+
+    --grad-Color-Primary: 29, 43%, 37%,1; /* hsla(29, 43%, 37%,1) */
+    --grad-Color-Secondary: 38, 100%, 50%, 0.65; /* hsla(38, 100%, 50%, 0.65) */
+
+    background: hsl(var(--background));
+    background: radial-gradient(
+      ellipse farthest-corner at bottom right,
+      hsla(29, 43%, 37%,1) 0%,
+      rgba(255, 162, 0, 0.65) 0%,
+      hsla(29, 43%, 37%,1) 80%
+    );
+    background: -webkit-radial-gradient(
+      ellipse farthest-corner at bottom right,
+      hsla(29, 43%, 37%,1) 0%,
+      rgba(255, 162, 0, 0.65) 0%,
+      hsla(29, 43%, 37%,1) 80%
+    );
+    background: -moz-radial-gradient(
+      ellipse farthest-corner at bottom right,
+      hsla(29, 43%, 37%,1) 0%,
+      rgba(255, 162, 0, 0.65) 0%,
+      hsla(29, 43%, 37%,1) 80%
+    );
+  }
+
+  .mechanicalFloaty {
+    --background: 29, 43%, 37%; /* hsl(29, 43%, 37%) */
+
+    --color-Border: 30, 15%, 21%; /* hsl(30, 15%, 21%) */
+    --card-Primary: 216, 11%, 9%; /* hsl(216, 11%, 9%) */
+    --card-Secondary: 231, 14%, 20%; /* hsl(231, 14%, 20%) */
+
+    --card-level1: 30, 11%, 4%; /* hsl(30, 11%, 4%) (work) */
+    --card-level2: 216, 11%, 9%; /* hsl(216, 11%, 9%) (play) */
+    --card-level3: 210, 10%, 23%; /* hsl(210, 10%, 23%) (study) */
+    --card-level4: 210, 9%, 31%; /* hsl(210, 9%, 31%) (exercise) */
+    --card-level5: 210, 11%, 71%; /* hsl(208, 7%, 46%) (social) */
+    --card-level6: 210, 14%, 83%; /* hsl(210, 11%, 71%) (self care) */
+
+    --text-paragraph-Primary: 46, 21%, 64%; /* hsl(46, 21%, 64%) */
+    --title-text: 234, 7%, 72%; /* hsl(234, 7%, 72%) */
+
+    --active-states: 235, 86%, 14%; /* hsl(235, 86%, 14%) */
+
+    --footer-n1: 210, 14%, 83%; /* hsl(210, 14%, 83%) */
+    --footer-n2: 105, 7%, 43%; /* hsl(105, 7%, 43%) */
+
+    --grad-Color-Primary: 216, 11%, 9%, 1; /* hsla(216, 11%, 9%,1) */
+    --grad-Color-Secondary: 70, 5%, 23%, 1; /* hsla(70, 5%, 23%,1) */
+
+    background: hsl(var(--background));
+    background: radial-gradient(
+      ellipse farthest-corner at bottom center,
+      hsl(216, 11%, 9%) 0%,
+      hsl(70, 5%, 23%) 0%,
+      hsl(216, 11%, 9%) 80%
+    );
+    background: -webkit-radial-gradient(
+      ellipse farthest-corner at bottom center,
+      hsl(216, 11%, 9%) 0%,
+      hsl(70, 5%, 23%) 0%,
+      hsl(216, 11%, 9%) 80%
+    );
+    background: -moz-radial-gradient(
+      ellipse farthest-corner at bottom center,
+      hsl(216, 11%, 9%) 0%,
+      hsl(70, 5%, 23%) 0%,
+      hsl(216, 11%, 9%) 80%
+    );
+  }
+
+  :root {
+    --very-Dark-Blue: 226, 43%, 10%; /* hsl(226, 43%, 10%) */
+    --dark-blue: 235, 46%, 20%; /* hsl(235, 46%, 20%) */
+    --desaturated-blue: 235, 45%, 61%; /* hsl(235, 45%, 61%) */
+    --pale-Blue: 236, 100%, 87%; /* hsl(236, 100%, 87%) */
+    --purple-Blue: 246, 80%, 60%; /* hsl(246, 80%, 60%) */
+
+    --Light-red: 15, 100%, 70%; /* hsl(15, 100%, 70%) (work) */
+    --Soft-blue: 195, 74%, 62%; /* hsl(195, 74%, 62%) (play) */
+    --pink-red: 348, 100%, 68%; /* hsl(348, 100%, 68%) (study) */
+    --Lime-green: 145, 58%, 55%; /* hsl(145, 58%, 55%) (exercise) */
+    --Violet: 264, 64%, 52%; /* hsl(264, 64%, 52%) (social) */
+    --Soft-orange: 43, 84%, 65%; /* hsl(43, 84%, 65%) (self care) */
+  }
+}

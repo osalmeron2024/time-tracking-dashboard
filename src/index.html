@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es" class="h-auto min-h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/icon"
+      sizes="48x48"
+      href="/assets/images/favicon.ico"
+    />
+    <title>Time tracking dashboard</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <script defer src="js/logica.js"></script>
+  </head>
+  <body class="darkMode">
+    <main class="flexGridMain md:w-[850px]">
+      <section
+        class="dashBoard cellSectionContent cellSection grid-rows-[1fr,1fr] md:grid grid-cols-4 cardDashboardMobileTranslateY md:cardDashboardTranslateY"
+      >
+        <article class="cellArticle row-span-2">
+          <div
+            class="flex gap-3 bg-card-Primary rounded-xl px-5 pt-3 md:flex-col"
+          >
+            <div
+              class="w-[90px] h-[90px] bg-white rounded-full mb-6 mt-3 md:mb-0"
+            >
+              <img
+                src="/assets/images/image-jeremy.png"
+                class="w-[85px] h-[85.5px] m-auto mt-0.5 rounded-full"
+                alt="Photo"
+              />
+            </div>
+            <div class="flex-col flex-wrap mt-7 md:mt-3 md:mb-16">
+              <p
+                class="text-text-paragraph-Primary text-xs font-Rubik-SemiBold"
+              >
+                Report for
+              </p>
+              <p
+                class="font-Rubik-Light pt-1 text-xl text-title-text md:w-1 md:text-2xl"
+              >
+                Jeremy Robson
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex place-content-between px-5 py-6 text-text-paragraph-Primary font-Rubik-Light text-base md:flex-col md:gap-4"
+          >
+            <p class="activeStatesBtn btnDaily rounded-md md:w-[45px]">Daily</p>
+            <p class="activeStatesBtn btnWeekly rounded-md md:w-[60px]">
+              Weekly
+            </p>
+            <p class="activeStatesBtn btnMonthly rounded-md md:w-[68px]">
+              Monthly
+            </p>
+          </div>
+        </article>
+        <article class="cellArticle flex flex-col">
+          <div
+            class="bg-card-level1 rounded-t-xl bg-[url('/assets/images/icon-work.svg')] bg-repeat-y bg-right h-[40px]"
+          ></div>
+          <div
+            class="rounded-xl bg-card-Secondary -mt-2 activeStatsCard md:h-full"
+          >
+            <div
+              class="flex place-content-between relative px-5 pt-4 text-text-paragraph-Primary md:pb-2 md:pt-6"
+            >
+              <p class="font-Rubik-SemiBold titleCard">Work</p>
+              <p
+                class="place-content-center font-Rubik-SemiBold text-title-text relative -mt-2"
+              >
+                ...
+              </p>
+            </div>
+            <div
+              class="flex place-content-between px-5 text-text-paragraph-Primary pb-5 pt-3 md:flex-col md:gap-3 md:pt-5"
+            >
+              <h1
+                class="text-title-text text-3xl font-Rubik-Light periodEstad md:text-5xl"
+              >
+                32hrs
+              </h1>
+              <p
+                class="place-content-center font-Rubik-Regular text-sm histEstad"
+              >
+                Last week - 36hrs
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="cellArticle flex flex-col">
+          <div
+            class="bg-card-level2 rounded-t-xl bg-[url('/assets/images/icon-play.svg')] bg-repeat-y bg-right h-[40px]"
+          ></div>
+          <div
+            class="rounded-xl -mt-2 bg-card-Secondary activeStatsCard md:h-full"
+          >
+            <div
+              class="flex place-content-between relative px-5 pt-4 text-text-paragraph-Primary md:pb-2 md:pt-6"
+            >
+              <p class="font-Rubik-SemiBold titleCard">Play</p>
+              <p
+                class="place-content-center font-Rubik-SemiBold text-title-text relative -mt-1"
+              >
+                ...
+              </p>
+            </div>
+            <div
+              class="flex place-content-between px-5 text-text-paragraph-Primary pb-5 pt-3 md:flex-col md:gap-3 md:pt-5"
+            >
+              <h1
+                class="text-title-text text-3xl font-Rubik-Light periodEstad md:text-5xl"
+              >
+                10hrs
+              </h1>
+              <p
+                class="place-content-center font-Rubik-Regular text-sm histEstad"
+              >
+                Last week - 8hrs
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="cellArticle flex flex-col">
+          <div
+            class="bg-card-level3 rounded-t-xl bg-[url('/assets/images/icon-study.svg')] bg-repeat-y bg-right h-[40px]"
+          ></div>
+          <div
+            class="rounded-xl -mt-2 bg-card-Secondary activeStatsCard md:h-full"
+          >
+            <div
+              class="flex place-content-between relative px-5 pt-4 text-text-paragraph-Primary md:pb-2 md:pt-6"
+            >
+              <p class="font-Rubik-SemiBold titleCard">Study</p>
+              <p
+                class="place-content-center font-Rubik-SemiBold text-title-text relative -mt-1"
+              >
+                ...
+              </p>
+            </div>
+            <div
+              class="flex place-content-between px-5 text-text-paragraph-Primary pb-5 pt-3 md:flex-col md:gap-3 md:pt-5"
+            >
+              <h1
+                class="text-title-text text-3xl font-Rubik-Light periodEstad md:text-5xl"
+              >
+                4hrs
+              </h1>
+              <p
+                class="place-content-center font-Rubik-Regular text-sm histEstad"
+              >
+                Last week - 7hrs
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="cellArticle flex flex-col">
+          <div
+            class="bg-card-level4 rounded-t-xl bg-[url('/assets/images/icon-exercise.svg')] bg-repeat-y bg-right h-[40px]"
+          ></div>
+          <div
+            class="rounded-xl -mt-2 bg-card-Secondary activeStatsCard md:h-full"
+          >
+            <div
+              class="flex place-content-between relative px-5 pt-4 text-text-paragraph-Primary md:pb-2 md:pt-6"
+            >
+              <p class="font-Rubik-SemiBold titleCard">Exercise</p>
+              <p
+                class="place-content-center font-Rubik-SemiBold text-title-text relative -mt-1"
+              >
+                ...
+              </p>
+            </div>
+            <div
+              class="flex place-content-between px-5 text-text-paragraph-Primary pb-5 pt-3 md:flex-col md:gap-3 md:pt-5"
+            >
+              <h1
+                class="text-title-text text-3xl font-Rubik-Light periodEstad md:text-5xl"
+              >
+                4hrs
+              </h1>
+              <p
+                class="place-content-center font-Rubik-Regular text-sm histEstad"
+              >
+                Last week - 5hrs
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="cellArticle flex flex-col">
+          <div
+            class="bg-card-level5 rounded-t-xl bg-[url('/assets/images/icon-social.svg')] bg-repeat-y bg-right h-[40px]"
+          ></div>
+          <div
+            class="rounded-xl -mt-2 bg-card-Secondary activeStatsCard md:h-full"
+          >
+            <div
+              class="flex place-content-between relative px-5 pt-4 text-text-paragraph-Primary md:pb-2 md:pt-6"
+            >
+              <p class="font-Rubik-SemiBold titleCard">Social</p>
+              <p
+                class="place-content-center font-Rubik-SemiBold text-title-text relative -mt-1"
+              >
+                ...
+              </p>
+            </div>
+            <div
+              class="flex place-content-between px-5 text-text-paragraph-Primary pb-5 pt-3 md:flex-col md:gap-3 md:pt-5"
+            >
+              <h1
+                class="text-title-text text-3xl font-Rubik-Light periodEstad md:text-5xl"
+              >
+                5hrs
+              </h1>
+              <p
+                class="place-content-center font-Rubik-Regular text-sm histEstad"
+              >
+                Last week - 10hrs
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="cellArticle flex flex-col">
+          <div
+            class="bg-card-level6 rounded-t-xl bg-[url('/assets/images/icon-self-care.svg')] bg-repeat-y bg-right h-[40px]"
+          ></div>
+          <div
+            class="rounded-xl -mt-2 bg-card-Secondary activeStatsCard md:h-full"
+          >
+            <div
+              class="flex place-content-between relative px-5 pt-4 text-text-paragraph-Primary md:pb-2 md:pt-6"
+            >
+              <p class="font-Rubik-SemiBold titleCard">Self Care</p>
+              <p
+                class="place-content-center font-Rubik-SemiBold text-title-text relative -mt-1"
+              >
+                ...
+              </p>
+            </div>
+            <div
+              class="flex place-content-between px-5 text-text-paragraph-Primary pb-5 pt-3 md:flex-col md:gap-3 md:pt-5"
+            >
+              <h1
+                class="text-title-text text-3xl font-Rubik-Light periodEstad md:text-5xl"
+              >
+                2hrs
+              </h1>
+              <p
+                class="place-content-center font-Rubik-Regular text-sm histEstad"
+              >
+                Last week - 2hrs
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        class="containterColorScheme cellColorScheme cellSection relative"
+      >
+        <figure class="relative w-16 mb-1 z-10">
+          <img
+            class="cursor-pointer downArrow hover:bg-card-level1 hover:rounded-md h-6 w-6" id="downArrow"
+            src="/assets/images/down-arrow.svg"
+            alt="Arrow"
+          />          
+        </figure>
+        <div class="cardColorSchemeHide relative rbCardSchemeColor">
+          <nav
+            class="flex flex-wrap gap-2 relative py-4 px-2 rounded-xl bg-gradient-to-r from-grad-Color-Secondary to-grad-Color-Primary font-Rubik-SemiBold text-xs"
+          >
+            <div>
+              <input
+                type="radio"
+                name="colorScheme"
+                id="darkMode"
+                class="inline-block relative align-middle rbDarkMode cursor-pointer"
+              />
+              <label for="darkMode" class="inline-block relative lblDarkMode cursor-pointer">
+                Dark Mode</label
+              >
+              <input
+                type="radio"
+                name="colorScheme"
+                id="earthySerene"
+                class="inline-block relative rbEarthySerene ml-[3.3rem] cursor-pointer align-middle md:ml-1"
+              />
+              <label
+                for="earthySerene"
+                class="inline-block relative lblEarthySerene cursor-pointer"
+                >Earthy&Serene</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="colorScheme"
+                id="mechanicalFloaty"
+                class="inline-block relative align-middle rbMechanicalFloaty cursor-pointer"
+              />
+              <label
+                for="mechanicalFloaty"
+                class="inline-block relative lblMechanicalFloaty cursor-pointer"
+                >Mechanical&Floaty</label
+              >
+              <input
+                type="radio"
+                name="colorScheme"
+                id="metallicChic"
+                class="inline-block relative ml-1 align-middle rbMetallicChic cursor-pointer"
+              />
+              <label
+                for="metallicChic"
+                class="inline-block relative lblMetallicChic cursor-pointer"
+                >Metallic Chic</label
+              >
+            </div>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <div
+      class="copyRight relative text-footer-n2 font-Rubik-LightItalic mx-auto w-[300px] my-3 px-2 cardCopyRightMobile md:w-[850px] md:text-center md:cardCopyRight"
+    >
+      Challenge by
+      <a
+        class="text-footer-n1 font-bold text-xs text-balance"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="#" class="text-footer-n1 font-bold text-xs text-balance"
+        >Onesis Salmerón</a
+      >.
+      <p class="pt-2 pb-3 font-Rubik-Light font-bold text-sm text-center text-gray-600">onesis.salmeron@hotmail.com - osalmeronb20@gmail.com</p>
+    </div>
+  </body>
+</html>
