@@ -829,6 +829,18 @@ video {
   margin-left: 3.3rem;
 }
 
+.ml-\[7\.5rem\] {
+  margin-left: 7.5rem;
+}
+
+.ml-\[8\.2rem\] {
+  margin-left: 8.2rem;
+}
+
+.ml-\[8\.5rem\] {
+  margin-left: 8.5rem;
+}
+
 .mt-0\.5 {
   margin-top: 0.125rem;
 }
@@ -855,10 +867,6 @@ video {
 
 .h-\[40px\] {
   height: 40px;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .h-\[85\.5px\] {
@@ -1003,26 +1011,6 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-icon-exercise {
-  background-image: url('/assets/images/icon-exercise.svg');
-}
-
-.bg-icon-play {
-  background-image: url('/assets/images/icon-play.svg');
-}
-
-.bg-icon-self-care {
-  background-image: url('/assets/images/icon-self-care.svg');
-}
-
-.bg-icon-social {
-  background-image: url('/assets/images/icon-social.svg');
-}
-
-.bg-icon-study {
-  background-image: url('/assets/images/icon-study.svg');
-}
-
 .from-grad-Color-Secondary {
   --tw-gradient-from: hsla(var(--grad-Color-Secondary)) var(--tw-gradient-from-position);
   --tw-gradient-to: hsla(var(--grad-Color-Secondary), 0) var(--tw-gradient-to-position);
@@ -1035,10 +1023,6 @@ video {
 
 .bg-right {
   background-position: right;
-}
-
-.bg-repeat-y {
-  background-repeat: repeat-y;
 }
 
 .px-2 {
